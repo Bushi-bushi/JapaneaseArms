@@ -79,13 +79,13 @@ a {
 }
 
 .section-title-wrap .sub-title {
-  font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--color-accent-gold);
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .section-title-wrap .section-title {
