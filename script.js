@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   // 対象の要素に 'fade-element' クラスを付与し、画面内に入ったら 'fade-in' クラスを追加する
   const revealTargets = document.querySelectorAll(
-    '.intro-text, .intro-image, .highlight-card, .exhibitor-card, .timeline-item, .venue-info, .venue-map, .ticket-card'
+    '.intro-text, .intro-image, .highlight-card, .exhibitor-card, .timeline-item, .venue-info, .venue-map, .ticket-card, .faq-item'
   );
 
   // 最初は非表示状態にするためのクラスを設定
@@ -88,6 +88,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealTargets.forEach(target => {
     revealObserver.observe(target);
+  });
+
+
+  // ==========================================================================
+  // 4. FAQ Accordion
+  // ==========================================================================
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('active');
+      
+      if (isOpen) {
+        item.classList.remove('active');
+        answer.style.maxHeight = null;
+        question.querySelector('.faq-icon i').className = 'fa-solid fa-plus';
+      } else {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        question.querySelector('.faq-icon i').className = 'fa-solid fa-minus';
+      }
+    });
   });
 
 });
