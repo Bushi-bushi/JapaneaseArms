@@ -461,6 +461,14 @@ a {
   padding: 10px 0;
 }
 
+@media (max-width: 576px) {
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 .info-item:first-child {
   padding-top: 0;
 }
@@ -902,29 +910,7 @@ a {
   line-height: 1.7;
 }
 
-.program-summary-list {
-  margin-top: 16px;
-  list-style: none;
-  padding: 16px;
-  background-color: var(--color-bg-card);
-  border-radius: 6px;
-  border-left: 3px solid var(--color-accent-gold);
-}
 
-.program-summary-list li {
-  margin-bottom: 10px;
-  color: var(--color-text-gray);
-}
-
-.program-summary-list li:last-child {
-  margin-bottom: 0;
-}
-
-.program-summary-list strong {
-  color: var(--color-text-white);
-  display: inline-block;
-  width: 160px;
-}
 
 /* --------------------------------------------------------------------------
    Venue & Access Section
