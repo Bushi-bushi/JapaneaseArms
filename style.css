@@ -779,6 +779,18 @@ a {
   color: var(--color-text-white);
 }
 
+.mc-badge {
+  font-size: 0.85rem;
+  background-color: var(--color-accent-gold);
+  color: var(--color-bg-dark);
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-left: 12px;
+  vertical-align: middle;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
 .exhibitor-theme {
   font-family: var(--font-serif);
   font-size: 1.15rem;
