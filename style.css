@@ -389,6 +389,27 @@ a {
   }
 }
 
+.hero-sponsor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #f5eedc;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+  backdrop-filter: blur(4px);
+  font-family: var(--font-sans);
+}
+
+.hero-sponsor-badge .sponsor-label {
+  color: var(--color-accent-gold);
+  font-weight: 700;
+}
+
 .hero-subtitle {
   font-family: var(--font-serif);
   font-size: 0.95rem;
