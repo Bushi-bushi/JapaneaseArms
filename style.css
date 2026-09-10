@@ -392,6 +392,7 @@ a {
 .hero-sponsor-badge {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
   background: rgba(212, 175, 55, 0.12);
   border: 1px solid rgba(212, 175, 55, 0.4);
@@ -399,10 +400,12 @@ a {
   padding: 6px 14px;
   border-radius: 4px;
   font-size: 0.9rem;
+  line-height: 1.5;
   letter-spacing: 0.08em;
   margin-bottom: 16px;
   backdrop-filter: blur(4px);
   font-family: var(--font-sans);
+  max-width: 100%;
 }
 
 .hero-sponsor-badge .sponsor-label {
